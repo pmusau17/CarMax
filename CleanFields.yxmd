@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AdditionalData.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Make" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Model" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Engine Fuel Type" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Engine HP" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Engine Cylinders" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Transmission Type" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Driven_Wheels" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Number of Doors" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Market Category" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Vehicle Size" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Vehicle Style" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="highway MPG" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="city mpg" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="Popularity" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+            <Field name="MSRP" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\AdditionalData.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>Transmission Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-10 13:56:29</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>AUTOMATIC</Operand>
+              <StartDate>2020-12-10 13:56:29</StartDate>
+              <EndDate>2020-12-10 13:56:29</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([Transmission Type],"AUTOMATIC")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Year</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-10 13:58:14</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1997</Operand>
+              <StartDate>2020-12-10 13:58:14</StartDate>
+              <EndDate>2020-12-10 13:58:14</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Year] &gt; "1997"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="558" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;</Operator>
+            <Field>Year</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-12-10 13:59:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2014</Operand>
+              <StartDate>2020-12-10 13:59:05</StartDate>
+              <EndDate>2020-12-10 13:59:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Year] &lt; "2014"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ttran\AppData\Local\Temp\Engine_36660_6b928600279d4c208414d966081e4b11_\Engine_20316_bfad36ff666c483eb4d0f90d41d1ac2c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="690" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Make","Model","Year","Engine Fuel Type","Engine HP","Engine Cylinders","Transmission Type","Driven_Wheels","Number of Doors","Market Category","Vehicle Size","Vehicle Style","highway MPG","city mpg","Popularity","MSRP"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="894" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseDataRemodeled.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CaseDataRemodeled.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="41" y="34.99999" width="793" height="403" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 20</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="66.00006" y="207.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CaseCompetitionData2021.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="insert_num" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="purchase_make" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="purchase_model" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="purchase_vehicle_year" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="purchase_price" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="trade_in" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="vehicle_financing" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="customer_age" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="customer_income" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="customer_gender" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="customer_previous_purchase" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="customer_distance_to_dealer" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="post_purchase_satisfaction" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="vehicle_warranty_used" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="subsequent_purchases" size="254" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="102" y="99.00019" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ttran\AppData\Local\Temp\Engine_36660_6b928600279d4c208414d966081e4b11_\Engine_20316_859f3914710445918f2e4865b48078f8_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="750" y="209" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="AgeBin" action="GroupBy" rename="AgeBin" />
+                <SummarizeField field="customer_income" action="GroupBy" rename="customer_income" />
+                <SummarizeField field="insert_num" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="186" y="171.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="insert_num" selected="True" />
+                <Field field="purchase_make" selected="True" />
+                <Field field="purchase_model" selected="True" />
+                <Field field="purchase_vehicle_year" selected="True" />
+                <Field field="purchase_price" selected="True" />
+                <Field field="trade_in" selected="True" />
+                <Field field="vehicle_financing" selected="True" />
+                <Field field="customer_age" selected="True" />
+                <Field field="customer_income" selected="True" />
+                <Field field="customer_gender" selected="True" />
+                <Field field="customer_previous_purchase" selected="True" />
+                <Field field="customer_distance_to_dealer" selected="True" />
+                <Field field="post_purchase_satisfaction" selected="True" />
+                <Field field="vehicle_warranty_used" selected="True" />
+                <Field field="subsequent_purchases" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="insert_num" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Int32" />
+                <Field name="purchase_make" size="13" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="purchase_model" size="22" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="V_String" />
+                <Field name="purchase_vehicle_year" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Int16" />
+                <Field name="purchase_price" size="13" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="String" />
+                <Field name="trade_in" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Byte" />
+                <Field name="vehicle_financing" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Byte" />
+                <Field name="customer_age" size="8" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="String" />
+                <Field name="customer_income" size="15" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="String" />
+                <Field name="customer_gender" size="1" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="String" />
+                <Field name="customer_previous_purchase" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Byte" />
+                <Field name="customer_distance_to_dealer" size="4" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="String" />
+                <Field name="post_purchase_satisfaction" size="2" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="String" />
+                <Field name="vehicle_warranty_used" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Byte" />
+                <Field name="subsequent_purchases" source="File: C:\Users\ttran\Desktop\2021-CarMax\CaseCompetitionData2021\CaseCompetitionData2021.csv" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="282" y="172" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>purchase_price</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>purchase_price</RootName>
+              <Delimeters value="-" />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings>
+            <Position x="378" y="172" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"purchase_price1","purchase_price2"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="558" y="172" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="insert_num" selected="True" />
+                <SelectField field="purchase_make" selected="True" />
+                <SelectField field="purchase_model" selected="True" />
+                <SelectField field="purchase_vehicle_year" selected="True" />
+                <SelectField field="purchase_price1" selected="True" rename="purchase_price_LB" type="Int64" size="8" />
+                <SelectField field="purchase_price2" selected="True" rename="purchase_price_UB" type="Int64" size="8" />
+                <SelectField field="purchase_price" selected="False" />
+                <SelectField field="trade_in" selected="True" />
+                <SelectField field="vehicle_financing" selected="True" />
+                <SelectField field="customer_age" selected="True" />
+                <SelectField field="customer_income" selected="True" />
+                <SelectField field="customer_gender" selected="True" />
+                <SelectField field="customer_previous_purchase" selected="True" />
+                <SelectField field="customer_distance_to_dealer" selected="True" type="Int64" size="8" />
+                <SelectField field="post_purchase_satisfaction" selected="True" />
+                <SelectField field="vehicle_warranty_used" selected="True" />
+                <SelectField field="subsequent_purchases" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="654" y="232" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Switch([customer_age],&quot;Old&quot;,&#xA;&quot;0 - 20&quot;,&quot;UnderTwenty&quot;,&#xA;&quot;21 - 30&quot;,&quot;Twenties&quot;,&#xA;&quot;31 - 40&quot;,&quot;Thirties&quot;,&#xA;&quot;41 - 50&quot;,&quot;Forties&quot;,&#xA;&quot;51 - 60&quot;,&quot;Fifties&quot;,&#xA;&quot;61 - 70&quot;,&quot;Sixties&quot;,&#xA;&quot;71 - 80&quot;,&quot;Seventies&quot;,&#xA;&quot;81 - 90&quot;,&quot;Eighties&quot;,&#xA;&quot;91 - 100&quot;,&quot;Nineties&quot;,&#xA;&quot;101+&quot;,&quot;HundredPlus&quot;,&#xA;&quot;?&quot;,&quot;Unknown&quot;)" field="AgeBin" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>AgeBin = Switch([customer_age],"Old",
+"0 - 20","UnderTwenty",
+"21 - 30","Twentie...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="750" y="137" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="purchase_make" action="GroupBy" rename="purchase_make" />
+                <SummarizeField field="purchase_model" action="GroupBy" rename="purchase_model" />
+                <SummarizeField field="insert_num" action="Count" rename="Count" />
+                <SummarizeField field="purchase_price_LB" action="Avg" rename="Avg_purchase_price_LB" />
+                <SummarizeField field="purchase_price_UB" action="Avg" rename="Avg_purchase_price_UB" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="726" y="87.99999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="purchase_make" action="GroupBy" rename="purchase_make" />
+                <SummarizeField field="purchase_model" action="GroupBy" rename="purchase_model" />
+                <SummarizeField field="purchase_vehicle_year" action="GroupBy" rename="purchase_vehicle_year" />
+                <SummarizeField field="insert_num" action="Count" rename="Count" />
+                <SummarizeField field="purchase_price_LB" action="Avg" rename="Avg_purchase_price_LB" />
+                <SummarizeField field="purchase_price_UB" action="Avg" rename="Avg_purchase_price_UB" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output26" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CleanFields</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
