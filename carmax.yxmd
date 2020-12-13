@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\msado\Documents\CarMax.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CarMax.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="insert_num" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="purchase_make" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="purchase_model" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="purchase_vehicle_year" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="purchase_price" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="trade_in" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="vehicle_financing" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="customer_age" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="customer_income" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="customer_gender" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="customer_previous_purchase" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="customer_distance_to_dealer" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="post_purchase_satisfaction" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="vehicle_warranty_used" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="subsequent_purchases" size="254" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="insert_num" selected="True" />
+            <Field field="purchase_make" selected="True" />
+            <Field field="purchase_model" selected="True" />
+            <Field field="purchase_vehicle_year" selected="True" />
+            <Field field="purchase_price" selected="True" />
+            <Field field="trade_in" selected="True" />
+            <Field field="vehicle_financing" selected="True" />
+            <Field field="customer_age" selected="True" />
+            <Field field="customer_income" selected="True" />
+            <Field field="customer_gender" selected="True" />
+            <Field field="customer_previous_purchase" selected="True" />
+            <Field field="customer_distance_to_dealer" selected="True" />
+            <Field field="post_purchase_satisfaction" selected="True" />
+            <Field field="vehicle_warranty_used" selected="True" />
+            <Field field="subsequent_purchases" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="insert_num" source="File: C:\Users\msado\Documents\CarMax.csv" type="Int32" />
+            <Field name="purchase_make" size="13" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="purchase_model" size="22" source="File: C:\Users\msado\Documents\CarMax.csv" type="V_String" />
+            <Field name="purchase_vehicle_year" source="File: C:\Users\msado\Documents\CarMax.csv" type="Int16" />
+            <Field name="purchase_price" size="13" source="File: C:\Users\msado\Documents\CarMax.csv" type="String" />
+            <Field name="trade_in" source="File: C:\Users\msado\Documents\CarMax.csv" type="Byte" />
+            <Field name="vehicle_financing" source="File: C:\Users\msado\Documents\CarMax.csv" type="Byte" />
+            <Field name="customer_age" size="8" source="File: C:\Users\msado\Documents\CarMax.csv" type="String" />
+            <Field name="customer_income" size="15" source="File: C:\Users\msado\Documents\CarMax.csv" type="String" />
+            <Field name="customer_gender" size="1" source="File: C:\Users\msado\Documents\CarMax.csv" type="String" />
+            <Field name="customer_previous_purchase" source="File: C:\Users\msado\Documents\CarMax.csv" type="Byte" />
+            <Field name="customer_distance_to_dealer" size="4" source="File: C:\Users\msado\Documents\CarMax.csv" type="String" />
+            <Field name="post_purchase_satisfaction" size="2" source="File: C:\Users\msado\Documents\CarMax.csv" type="String" />
+            <Field name="vehicle_warranty_used" source="File: C:\Users\msado\Documents\CarMax.csv" type="Byte" />
+            <Field name="subsequent_purchases" source="File: C:\Users\msado\Documents\CarMax.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="insert_num" selected="True" rename="Customer_ID" />
+            <SelectField field="purchase_make" selected="True" rename="Make" />
+            <SelectField field="purchase_model" selected="True" rename="Model" />
+            <SelectField field="purchase_vehicle_year" selected="True" rename="Model_Year" />
+            <SelectField field="customer_distance_to_dealer" selected="True" rename="Distance" />
+            <SelectField field="post_purchase_satisfaction" selected="True" rename="Satisfaction" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="642" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||CMData</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use carmax;
+DROP TABLE IF EXISTS datatable;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Query=CMData</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="546" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>dataKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="378" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Customer_ID" />
+            <Field field="Make" />
+            <Field field="Model" />
+            <Field field="Model_Year" />
+            <Field field="purchase_price" />
+            <Field field="trade_in" />
+            <Field field="vehicle_financing" />
+            <Field field="customer_age" />
+            <Field field="customer_income" />
+            <Field field="customer_gender" />
+            <Field field="customer_previous_purchase" />
+            <Field field="Distance" />
+            <Field field="Satisfaction" />
+            <Field field="vehicle_warranty_used" />
+            <Field field="subsequent_purchases" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>national_M2019_dl.xlsx
+Query=`national_M2019_dl$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="area" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="area_title" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="area_type" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="naics" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="naics_title" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="i_group" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="own_code" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="occ_code" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="occ_title" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="o_group" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="tot_emp" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="emp_prse" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="jobs_1000" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="loc_quotient" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="pct_total" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="h_mean" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_mean" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="mean_prse" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="h_pct10" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_pct25" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_median" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_pct75" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_pct90" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_pct10" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_pct25" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_median" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_pct75" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_pct90" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="annual" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="hourly" size="255" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="198" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="area" selected="True" />
+            <Field field="area_title" selected="True" />
+            <Field field="area_type" selected="True" />
+            <Field field="naics" selected="True" />
+            <Field field="naics_title" selected="True" />
+            <Field field="i_group" selected="True" />
+            <Field field="own_code" selected="True" />
+            <Field field="occ_code" selected="True" />
+            <Field field="occ_title" selected="True" />
+            <Field field="o_group" selected="True" />
+            <Field field="jobs_1000" selected="True" />
+            <Field field="loc_quotient" selected="True" />
+            <Field field="h_mean" selected="True" />
+            <Field field="a_mean" selected="True" />
+            <Field field="h_pct10" selected="True" />
+            <Field field="h_pct25" selected="True" />
+            <Field field="h_median" selected="True" />
+            <Field field="h_pct75" selected="True" />
+            <Field field="h_pct90" selected="True" />
+            <Field field="a_pct10" selected="True" />
+            <Field field="a_pct25" selected="True" />
+            <Field field="a_median" selected="True" />
+            <Field field="a_pct75" selected="True" />
+            <Field field="a_pct90" selected="True" />
+            <Field field="annual" selected="True" />
+            <Field field="hourly" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="area" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Byte" />
+            <Field name="area_title" size="4" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="area_type" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Byte" />
+            <Field name="naics" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="naics_title" size="14" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="i_group" size="14" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="own_code" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Int16" />
+            <Field name="occ_code" size="7" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="occ_title" size="136" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="o_group" size="8" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="tot_emp" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="emp_prse" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="jobs_1000" size="1" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="loc_quotient" size="1" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="pct_total" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="h_mean" size="18" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_mean" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="mean_prse" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Double" />
+            <Field name="h_pct10" size="18" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_pct25" size="18" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_median" size="18" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_pct75" size="18" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="h_pct90" size="18" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="V_String" />
+            <Field name="a_pct10" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="a_pct25" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="a_median" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="a_pct75" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="a_pct90" size="6" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="String" />
+            <Field name="annual" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Bool" />
+            <Field name="hourly" source="File: C:\Users\msado\Documents\national_M2019_dl.xlsx|||`national_M2019_dl$`" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="area" selected="True" />
+            <SelectField field="area_title" selected="True" size="5" />
+            <SelectField field="area_type" selected="True" />
+            <SelectField field="naics" selected="True" size="20" />
+            <SelectField field="naics_title" selected="True" size="25" />
+            <SelectField field="i_group" selected="True" size="25" />
+            <SelectField field="own_code" selected="True" />
+            <SelectField field="occ_code" selected="True" size="10" />
+            <SelectField field="occ_title" selected="True" size="100" />
+            <SelectField field="o_group" selected="True" size="20" />
+            <SelectField field="jobs_1000" selected="False" />
+            <SelectField field="loc_quotient" selected="False" />
+            <SelectField field="pct_total" selected="False" />
+            <SelectField field="h_mean" selected="True" size="10" />
+            <SelectField field="a_mean" selected="True" size="15" />
+            <SelectField field="h_pct10" selected="True" size="15" />
+            <SelectField field="h_pct25" selected="True" size="15" />
+            <SelectField field="h_median" selected="True" size="15" />
+            <SelectField field="h_pct75" selected="True" size="15" />
+            <SelectField field="h_pct90" selected="True" size="15" />
+            <SelectField field="a_pct10" selected="True" size="15" />
+            <SelectField field="a_pct25" selected="True" size="15" />
+            <SelectField field="a_median" selected="True" size="15" />
+            <SelectField field="a_pct75" selected="True" type="Int32" size="4" />
+            <SelectField field="a_pct90" selected="True" size="15" />
+            <SelectField field="annual" selected="False" />
+            <SelectField field="hourly" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="414" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="area" />
+            <Field field="area_title" />
+            <Field field="area_type" />
+            <Field field="naics" />
+            <Field field="naics_title" />
+            <Field field="i_group" />
+            <Field field="own_code" />
+            <Field field="occ_code" />
+            <Field field="occ_title" />
+            <Field field="o_group" />
+            <Field field="tot_emp" />
+            <Field field="emp_prse" />
+            <Field field="h_mean" />
+            <Field field="a_mean" />
+            <Field field="mean_prse" />
+            <Field field="h_pct10" />
+            <Field field="h_pct25" />
+            <Field field="h_median" />
+            <Field field="h_pct75" />
+            <Field field="h_pct90" />
+            <Field field="a_pct10" />
+            <Field field="a_pct25" />
+            <Field field="a_median" />
+            <Field field="a_pct75" />
+            <Field field="a_pct90" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="570" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>BLSKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||BLS_Table</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use carmax;
+DROP TABLE IF EXISTS BLS;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:MySQL
+Query=BLS_Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Unique" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>carmax</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
